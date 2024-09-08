@@ -8,3 +8,5 @@ lazy-lock.json
 
 Brew uninstall neovim
 Brew install neovim
+
+Lazy.lua will setup lazy.nvim, which is a plugin manager, we will use to install and setup all of our plugins
