@@ -1,0 +1,10 @@
+lua
+  dchorn
+	core
+	plugins
+	  lazy.lua
+init.lua
+lazy-lock.json
+
+Brew uninstall neovim
+Brew install neovim
