@@ -24,7 +24,7 @@ keymap.set("i", "<C-s>", "<Esc>:w<CR>a", { noremap = true, silent = true })
 -- Map Ctrl+Q to quit Neovim in normal mode
 keymap.set("n", "<C-q>", ":q<CR>", { noremap = true, silent = true })
 
--- keymap.set("n", "<C-l>", ":Lazy<CR>", { noremap = true, silent = true })
+--keymap.set("n", "<C-l>", ":Lazy<CR>", { noremap = true, silent = true })
 
 -- Map Ctrl+E to execute the :Explore command in normal mode
 vim.keymap.set('n', '<C-e>', ':Explore<CR>', { noremap = true, silent = true })
