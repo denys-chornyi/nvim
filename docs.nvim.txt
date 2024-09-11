@@ -178,6 +178,23 @@ return {
     "folke/tokyonight.nvim",
     priority = 1000, -- to make sure, that plugin loads before any other
     config = function()
+        -- local bg = ""
+        -- local bg_dark = ""
+        -- local bg_highlight = ""
+        -- local bg_search = ""
+        -- local bg_visual = ""
+        -- local fg = ""
+        -- local fg_dark = ""
+        -- local fg_gutter = ""
+        -- local border = ""
+        
+        require("tokyonight").setup({
+            style = "night"
+            -- on_colors = function(colors)
+            --    colors.bg = bg
+            --    ...
+            -- end
+        })
         vim.cmd("colorscheme tokyonight")
     end
 
@@ -198,8 +215,70 @@ return {
 
 }
 
+If lazy noticed missing plugin, it will open lazy ui and install this plugin. All loaded plugins are lying in  ~/.local/share/nvim/lazy/ folder. Nvim loads for the current session only those plugins, that are defined in configuration. So there can be much more plugins installed, that used
 
+Now we will add a better file explorer
 
+-- function, that will run, when the plugin loads
+config = function()
+end
+
+:Lazy reload nvim-tree.lua - reload after installing of plugin
+
+return {
+    "nvim-tree/nvim-tree.lua",
+    dependencies = "nvim-tree/nvim-web-devicons", -- for showing file icons in explorer 
+    config = function()
+        local nvimtree = require("nvim-tree")
+
+        -- recommended settings from nvim-tree documentation
+        vim.g.loaded_netrw = 1
+        vim.g.loaded_netrwPlugin = 1
+
+        nvimtree.setup({
+            -- size of explorer
+            view = {
+                width = 35,
+                relativenumber = true,
+            },
+            -- change folder arrow icons
+            renderer = {
+                indent_markers = {
+                    enable = true,
+                },
+                icons = {
+                    glyphs = {
+                        folder = {
+                            arrow_closed = "", -- arrow when folder is closed
+                            arrow_open = "", -- arrow when folder is open
+                        },
+                    },
+                },
+            },
+           actions = {
+                open_file = {
+                    window_picker = {
+                        enable = false,
+                    },
+                },
+            },
+            filters = {
+                custom = { ".DS_Store" },
+            },
+            git = {
+                ignore = false,
+            },
+        })
+
+        -- set keymaps
+        local keymap = vim.keymap -- for conciseness
+
+        keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
+        keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" }) -- toggle file explorer on current file
+        keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
+        keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
+    end
+}
 
 
 
