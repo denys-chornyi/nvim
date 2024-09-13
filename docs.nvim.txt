@@ -301,6 +301,8 @@ return {
 
 We can add additional shortcuts in opts section.
 
+Next plugin - telescope (fuzzy finder)
+
 
 
 
