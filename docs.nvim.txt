@@ -319,7 +319,13 @@ Dressing.nvim plugin adds some customisation to file explorer, such as better ap
 
 Vim-maximizer.nvim 
 
-Treesitter
+Treesitter (better syntax highlighting, indentation, ... )
+
+In nvim-treesitter repo we can see all the parsers, that are available.
+
+:InspectTree - inspect tree of file
+
+Incremental selection - ctrl+space - selection of blocks of code
 
 
 
