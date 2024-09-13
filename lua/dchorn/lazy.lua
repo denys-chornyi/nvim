@@ -12,8 +12,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- change_detection parameter disables a message about changes in plugin files
 require("lazy").setup("dchorn.plugins", {
+    -- lazy.nvim automatically checks for plugin updates
+    checker = {
+        enabled = true,
+        notify = false,
+    },
+
+    -- change_detection parameter disables a message about changes in plugin files
     change_detection = {
         notify = false,
     },

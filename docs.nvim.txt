@@ -305,6 +305,15 @@ Next plugin - telescope (fuzzy finder)
 
 Next plugins are alpha for main menu and auto-session for sessions.
 
+Git icons in file explorer shows us changes and action in local repo.
+
+Last session will be saved automatically. After restoring the session we will open a file, that was open last. spc+e+e will open explorer for last session project.
+
+Bufferline plugin for tabs
+
+Lualine plugin, for staff, that lies down(mode, file name, ...) (statusline).
+
+Main modes: insert, normal, visual(select a part of code), command(type commands), replace
 
 
 
