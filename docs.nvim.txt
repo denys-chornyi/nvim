@@ -313,7 +313,9 @@ Bufferline plugin for tabs
 
 Lualine plugin, for staff, that lies down(mode, file name, ...) (statusline).
 
-Main modes: insert, normal, visual(select a part of code), command(type commands), replace
+Main modes: insert, normal, visual(select a part of code), command(type commands), replace.
+
+Dressing.nvim plugin adds some customisation to file explorer, such as better appearance of rename/add/delete... actions.
 
 
 
