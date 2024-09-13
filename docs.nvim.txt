@@ -317,6 +317,10 @@ Main modes: insert, normal, visual(select a part of code), command(type commands
 
 Dressing.nvim plugin adds some customisation to file explorer, such as better appearance of rename/add/delete... actions.
 
+Vim-maximizer.nvim 
+
+Treesitter
+
 
 
 
