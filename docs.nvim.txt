@@ -327,6 +327,14 @@ In nvim-treesitter repo we can see all the parsers, that are available.
 
 Incremental selection - ctrl+space - selection of blocks of code
 
+Indent-blankline added(changes the appearance of indent blank line)
+
+Autocompletion plugin is the next one (autocompletion recommendation)
+./ - autocompletion for paths
+ctrl+f - scroll down through preview in paths autocompletion. ctrl+b - scroll down
+
+Tab on file in neovim will open this file 
+
 
 
 
