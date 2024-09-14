@@ -337,8 +337,23 @@ Tab on file in neovim will open this file
 
 Autopairs (for brackets, quotes, ...)
 
+Comment plugin - use gc+G, to comment the entire file from the line, where the cursor is (also for uncomment)
+gc1j - comment current line and the next one.
+gcc - comment line
 
+Plugin for TODO comments
+spc+f+t - look for TODO comments
 
+Next and previous files
+ctrl+o
+ctrl+i 
+
+TODO: - plugin will recognise such todos
+HACK:
+BUG:
+
+Such comments will be highlighted
+spc+f+t will show such things in telescope
 
 
 
