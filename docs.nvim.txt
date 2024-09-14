@@ -335,6 +335,8 @@ ctrl+f - scroll down through preview in paths autocompletion. ctrl+b - scroll do
 
 Tab on file in neovim will open this file 
 
+Autopairs (for brackets, quotes, ...)
+
 
 
 
