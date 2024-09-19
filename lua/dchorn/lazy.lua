@@ -12,7 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("dchorn.plugins", {
+require("lazy").setup({ { import = "dchorn.plugins" }, { import = "dchorn.plugins.lsp" } }, {
     -- lazy.nvim automatically checks for plugin updates
     checker = {
         enabled = true,

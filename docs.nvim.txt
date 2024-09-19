@@ -359,6 +359,19 @@ spc+f+t will show such things in telescope
 Substitute plugin.
 Surround plugin
 
+Mason plugin for language lsps.
+
+Down in the line we can see messages about plugins, that are installed.
+
+:Mason - mason ui
+
+We will use mason for installing lsp, linters and formatters.
+
+In mason ui:
+i - to install plugin
+X - to delete plugin
+
+Lspconfig plugin
 
 
 
