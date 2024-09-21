@@ -1,4 +1,4 @@
-return {
+return { 
     "hrsh7th/nvim-cmp",
     event = "InsertEnter", -- this plugin will only load if we go in insert mode
     dependencies = {
@@ -18,7 +18,7 @@ return {
     config = function()
         local cmp = require("cmp")
         local luasnip = require("luasnip")
-        local lspkind = require("lspkind") 
+        local lspkind = require("lspkind")
 
         -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
         require("luasnip.loaders.from_vscode").lazy_load()
@@ -29,6 +29,7 @@ return {
                 completeopt = "menu,menuone,preview",
  
             },
+
 
             snippet = { -- configure how nvim-cmp interacts with snippet engine
                 expand = function(args)
@@ -50,6 +51,7 @@ return {
             -- sources for autocompletion
             sources = cmp.config.sources({
                 -- { name = "nvim_lsp"},
+                { name = "copilot" },
                 { name = "buffer" }, -- text within current buffer
                 { name = "luasnip" }, -- snippets
                 { name = "path" }, -- file system paths

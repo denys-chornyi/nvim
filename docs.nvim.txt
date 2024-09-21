@@ -373,6 +373,9 @@ X - to delete plugin
 
 Lspconfig plugin
 
+Windows - ts,html,css
+Tabs - different components
+
 
 
 
