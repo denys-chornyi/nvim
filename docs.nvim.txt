@@ -365,7 +365,11 @@ Down in the line we can see messages about plugins, that are installed.
 
 :Mason - mason ui
 
+i for installing 
+X for deleting
+
 We will use mason for installing lsp, linters and formatters.
+A linter is a tool to help you improve your code. 
 
 In mason ui:
 i - to install plugin
@@ -373,17 +377,21 @@ X - to delete plugin
 
 Lspconfig plugin
 
+gg - cursor at the beginning of the file
+V - visual mode
+G - move to the end of the file
+
 Windows - ts,html,css
 Tabs - different components
 
+ggVG - select all lines in file
 
+We can use custom styling formats defining files like style.toml.
 
+Git plugin
 
-
-
-
-
-
+Tab - next tab
+Shift+Tab - previous tab
 
 
 
